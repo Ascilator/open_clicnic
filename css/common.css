@@ -158,25 +158,13 @@ button.secondary_button {
   line-height: 120%;
   letter-spacing: 0%;
   color: #3e8dff;
-  padding: 10px 20px 10px 30px;
+  padding: 10px 20px 10px;
   position: relative;
   border-radius: 30px;
   background: #fff;
   border: 1px solid #3e8dff;
   cursor: pointer;
   transition: 0.3s;
-}
-button.secondary_button:after {
-  position: absolute;
-  content: "";
-  display: block;
-  top: 50%;
-  transform: translate(0, -50%);
-  left: 20px;
-  background: #3e8dff;
-  border-radius: 20px;
-  width: 5px;
-  height: 5px;
 }
 button.secondary_button:hover {
   border: 1px solid #2a3440;

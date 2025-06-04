@@ -1076,14 +1076,9 @@ x .adresses_block ul li:after {
   }
 }
 .dicount_block .mobile_footer {
-  display: none;
-}
-@media screen and (max-width: 900px) {
-  .dicount_block .mobile_footer {
-    margin-top: 20px;
-    display: flex;
-    justify-content: flex-end;
-  }
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
 }
 @media screen and (max-width: 900px) {
   .dicount_block .mobile_footer .main_link {
@@ -2639,6 +2634,7 @@ x .adresses_block ul li:after {
 .legal_block {
   margin-top: 140px;
   padding: 60px 0;
+  background: #f2f4f8;
 }
 .legal_block .block_header {
   margin-bottom: 30px;
@@ -2775,7 +2771,7 @@ x .adresses_block ul li:after {
 }
 @media screen and (max-width: 900px) {
   .form_block span {
-    display: none;
+    font-size: 12px;
   }
 }
 .form_block a {
@@ -3120,6 +3116,9 @@ x .adresses_block ul li:after {
 }
 .steps .right_part .main_button {
   margin-top: auto;
+  background: #fff;
+  color: #3e8dff;
+  border: none;
 }
 @media screen and (max-width: 900px) {
   .steps .right_part .main_button {
@@ -3676,6 +3675,14 @@ x .adresses_block ul li:after {
   letter-spacing: 0%;
   margin-top: 10px;
 }
+@media screen and (max-width: 900px) {
+  .our_stars .stars_slider_body {
+    margin: 0 10px 0 -10px;
+  }
+  .our_stars .stars_slider_body .slick-list {
+    overflow: visible;
+  }
+}
 .our_stars img {
   width: 100%;
   -o-object-fit: cover;
@@ -3701,6 +3708,11 @@ x .adresses_block ul li:after {
 @media screen and (max-width: 900px) {
   .our_stars p {
     margin-top: 10px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .our_stars {
+    margin-top: 80px;
   }
 }
 
@@ -4105,7 +4117,7 @@ x .adresses_block ul li:after {
   background: rgb(242, 244, 248);
   border-radius: 20px;
 }
-.rew_text_block .rev_slider_item span {
+.rew_text_block .rev_slider_item > span {
   font-weight: 400;
   font-size: 16px;
   line-height: 120%;
@@ -4288,6 +4300,14 @@ x .adresses_block ul li:after {
 .filials .block_header {
   margin-bottom: 30px;
 }
+.filials .block_header .right_part {
+  display: none;
+}
+@media screen and (max-width: 900px) {
+  .filials .block_header .right_part {
+    display: flex;
+  }
+}
 @media screen and (max-width: 900px) {
   .filials .block_header {
     display: flex;
@@ -4393,7 +4413,7 @@ x .adresses_block ul li:after {
 }
 @media screen and (max-width: 900px) {
   .filials {
-    margin-top: 20px;
+    margin-top: 80px;
   }
 }
 

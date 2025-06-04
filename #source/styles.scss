@@ -1058,12 +1058,9 @@ $color_text: #2a3440;
   }
 
   .mobile_footer {
-    display: none;
-    @media screen and (max-width: 900px) {
-      margin-top: 20px;
-      display: flex;
-      justify-content: flex-end;
-    }
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
 
     .main_link {
       @media screen and (max-width: 900px) {
@@ -2652,6 +2649,7 @@ $color_text: #2a3440;
 .legal_block {
   margin-top: 140px;
   padding: 60px 0;
+  background: #f2f4f8;
   .block_header {
     margin-bottom: 30px;
     display: flex;
@@ -2784,7 +2782,7 @@ $color_text: #2a3440;
     line-height: 100%;
     letter-spacing: 0%;
     @media screen and (max-width: 900px) {
-      display: none;
+      font-size: 12px;
     }
   }
 
@@ -3108,6 +3106,9 @@ $color_text: #2a3440;
     }
     .main_button {
       margin-top: auto;
+      background: #fff;
+      color: #3e8dff;
+      border: none;
 
       @media screen and (max-width: 900px) {
         margin-top: 56px;
@@ -3632,6 +3633,12 @@ $color_text: #2a3440;
       letter-spacing: 0%;
       margin-top: 10px;
     }
+    @media screen and (max-width: 900px) {
+      margin: 0 10px 0 -10px;
+      .slick-list {
+        overflow: visible;
+      }
+    }
   }
 
   img {
@@ -3656,6 +3663,10 @@ $color_text: #2a3440;
     @media screen and (max-width: 900px) {
       margin-top: 10px;
     }
+  }
+
+  @media screen and (max-width: 900px) {
+    margin-top: 80px;
   }
 }
 
@@ -4044,7 +4055,7 @@ $color_text: #2a3440;
     margin: 0 10px;
     background: rgb(242, 244, 248);
     border-radius: 20px;
-    span {
+    & > span {
       font-weight: 400;
       font-size: 16px;
       line-height: 120%;
@@ -4218,6 +4229,12 @@ $color_text: #2a3440;
   margin-top: 140px;
   .block_header {
     margin-bottom: 30px;
+    .right_part {
+      display: none;
+      @media screen and (max-width: 900px) {
+        display: flex;
+      }
+    }
     @media screen and (max-width: 900px) {
       display: flex;
       align-items: center;
@@ -4320,7 +4337,7 @@ $color_text: #2a3440;
   }
 
   @media screen and (max-width: 900px) {
-    margin-top: 20px;
+    margin-top: 80px;
   }
 }
 

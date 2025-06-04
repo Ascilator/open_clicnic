@@ -238,7 +238,7 @@ $(function () {
       slidesToShow: 1,
       slidesToScroll: 1,
       speed: 300,
-      arrows: false,
+      arrows: true,
       prevArrow: $('.slider_fillial_controls>.arrow_prev'),
       nextArrow: $('.slider_fillial_controls>.arrow_next'),
     });
