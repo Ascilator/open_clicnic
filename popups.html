@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/css/content.css" />
+    <link rel="stylesheet" href="css/css/custom.css" />
+    <link rel="stylesheet" href="css/css/main.css" />
+    <link rel="stylesheet" href="css/css/reset.css" />
+    <link rel="stylesheet" href="css/css/special.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background: #e8e8e8;
+      }
+    </style>
+    <div class="big_wrapper">
+      <button class="main_button summon_app_popup">попап 1</button>
+      <button class="main_button summon_approve_popup">попап 2</button>
+
+      <div class="get_an_appointment _popup">
+        <div class="cross">
+          <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0.550706 0.550248C0.160181 0.940772 0.160182 1.57394 0.550706 1.96446L4.08624 5.5L0.550706 9.03553C0.160181 9.42605 0.160181 10.0592 0.550706 10.4497C0.94123 10.8403 1.5744 10.8403 1.96492 10.4497L5.50045 6.91421L9.03599 10.4497C9.42651 10.8403 10.0597 10.8403 10.4502 10.4497C10.8407 10.0592 10.8407 9.42605 10.4502 9.03553L6.91467 5.5L10.4502 1.96446C10.8407 1.57394 10.8407 0.940772 10.4502 0.550248C10.0597 0.159724 9.42651 0.159724 9.03599 0.550248L5.50045 4.08578L1.96492 0.550248C1.57439 0.159724 0.94123 0.159724 0.550706 0.550248Z"
+              fill="#2A3440"
+            />
+          </svg>
+        </div>
+        <div class="popup_header">
+          <div class="img">
+            <img src="img/doctor.png" alt="" />
+            <div class="mobile_text">
+              <div class="name">
+                Мянник Сергей <br />
+                Алексеевич
+              </div>
+              <div class="job">Уролог</div>
+            </div>
+          </div>
+          <div class="text_part">
+            <div class="name">Мянник Сергей Алексеевич</div>
+            <div class="job">Уролог</div>
+            <div class="stats">
+              <div class="stat_item">
+                <span>Стаж</span>
+                <span>37 лет</span>
+              </div>
+              <div class="stat_item">
+                <span>Отзывы</span>
+                <span class="bordered">10 отзывов</span>
+              </div>
+              <div class="stat_item">
+                <span>Адрес</span>
+                <span>Клиника на Пресне,</span>
+                <span>Клиника на пр-те Мира</span>
+              </div>
+              <div class="stat_item _none">
+                <span>98%</span>
+                <span>Удовлетворены результатом лечения</span>
+              </div>
+            </div>
+            <div class="mobile_stats"><span>98%</span>  Удовлетворены результатом лечения</div>
+          </div>
+        </div>
+        <div class="mobile_calendar_header">
+          <div class="text">Выберите дату приема</div>
+          <div class="month">
+            <div class="arrow">
+              <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 15L1 8L8 1" stroke="#2A3440" stroke-opacity="0.4" />
+              </svg>
+            </div>
+            <div class="name">Май 2025</div>
+            <div class="arrow">
+              <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L8 8L1 15" stroke="#2A3440" stroke-opacity="0.4" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="clinic_switcher">
+          <button class="main_button">Клиника на Пресне</button>
+          <button class="main_reverse_button">Клиника на пр-те Мира</button>
+        </div>
+        <div class="calendar_container">
+          <div class="left_part">
+            <div class="month">
+              <div class="arrow">
+                <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 15L1 8L8 1" stroke="#2A3440" stroke-opacity="0.4" />
+                </svg>
+              </div>
+              <div class="name">Май 2025</div>
+              <div class="arrow">
+                <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L8 8L1 15" stroke="#2A3440" stroke-opacity="0.4" />
+                </svg>
+              </div>
+            </div>
+            <div class="calendar">
+              <div class="cal_header">
+                <div class="item">пн</div>
+                <div class="item">вт</div>
+                <div class="item">ср</div>
+                <div class="item">чт</div>
+                <div class="item">пт</div>
+                <div class="item">сб</div>
+                <div class="item">вс</div>
+              </div>
+              <div class="cal_body">
+                <button class="calendar_btn"></button>
+                <button class="calendar_btn"></button>
+                <button class="calendar_btn"></button>
+                <button class="calendar_btn">
+                  <span>1</span>
+                  <span>Нет приема</span>
+                </button>
+                <button class="calendar_btn">
+                  <span>2</span>
+                  <span>Нет приема</span>
+                </button>
+                <button class="calendar_btn">
+                  <span>3</span>
+                  <span>Нет приема</span>
+                </button>
+                <button class="calendar_btn">
+                  <span>4</span>
+                  <span>Нет приема</span>
+                </button>
+                <button class="calendar_btn">
+                  <span>5</span>
+                  <span>Нет приема</span>
+                </button>
+                <button class="calendar_btn">
+                  <span>6</span>
+                  <span>Нет приема</span>
+                </button>
+                <button class="calendar_btn _active _pressed">
+                  <span>7</span>
+                  <span>10:00-<br />16:00</span>
+                </button>
+                <button class="calendar_btn">
+                  <span>8</span>
+                  <span>Нет приема</span>
+                </button>
+                <button class="calendar_btn _active">
+                  <span>9</span>
+                  <span>14:00-<br />20:00</span>
+                </button>
+                <button class="calendar_btn">
+                  <span>10</span>
+                  <span>Нет приема</span>
+                </button>
+                <button class="calendar_btn">
+                  <span>11</span>
+                  <span>Нет приема</span>
+                </button>
+                <button class="calendar_btn">
+                  <span>12</span>
+                  <span>Нет приема</span>
+                </button>
+                <button class="calendar_btn">
+                  <span>13</span>
+                  <span>Нет приема</span>
+                </button>
+                <button class="calendar_btn _active">
+                  <span>14</span>
+                  <span>10:00-<br />16:00</span>
+                </button>
+                <button class="calendar_btn">
+                  <span>15</span>
+                  <span>Нет приема</span>
+                </button>
+                <button class="calendar_btn _active">
+                  <span>16</span>
+                  <span>14:00-<br />20:00</span>
+                </button>
+                <button class="calendar_btn">
+                  <span>17</span>
+                  <span>Нет приема</span>
+                </button>
+                <button class="calendar_btn">
+                  <span>18</span>
+                  <span>Нет приема</span>
+                </button>
+                <button class="calendar_btn">
+                  <span>19</span>
+                  <span>Нет приема</span>
+                </button>
+                <button class="calendar_btn">
+                  <span>20</span>
+                  <span>Нет приема</span>
+                </button>
+                <button class="calendar_btn _active">
+                  <span>21</span>
+                  <span>10:00-<br />16:00</span>
+                </button>
+                <button class="calendar_btn">
+                  <span>22</span>
+                  <span>Нет приема</span>
+                </button>
+                <button class="calendar_btn _active">
+                  <span>23</span>
+                  <span>14:00-<br />20:00</span>
+                </button>
+                <button class="calendar_btn">
+                  <span>24</span>
+                  <span>Нет приема</span>
+                </button>
+                <button class="calendar_btn">
+                  <span>25</span>
+                  <span>Нет приема</span>
+                </button>
+                <button class="calendar_btn">
+                  <span>26</span>
+                  <span>Нет приема</span>
+                </button>
+                <button class="calendar_btn">
+                  <span>27</span>
+                  <span>Нет приема</span>
+                </button>
+                <button class="calendar_btn _active">
+                  <span>28</span>
+                  <span>10:00-<br />16:00</span>
+                </button>
+                <button class="calendar_btn">
+                  <span>29</span>
+                  <span>Нет приема</span>
+                </button>
+                <button class="calendar_btn _active">
+                  <span>30</span>
+                  <span>14:00-<br />20:00</span>
+                </button>
+                <button class="calendar_btn">
+                  <span>31</span>
+                  <span>Нет приема</span>
+                </button>
+                <button class="calendar_btn"></button>
+                <button class="calendar_btn _no_border"></button>
+                <button class="calendar_btn _no_border"></button>
+                <button class="calendar_btn _no_border"></button>
+                <button class="calendar_btn _no_border"></button>
+                <button class="calendar_btn _no_border"></button>
+                <button class="calendar_btn _no_border"></button>
+                <button class="calendar_btn _no_border"></button>
+              </div>
+            </div>
+          </div>
+          <div class="right_part">
+            <div class="title">Выберите время приема</div>
+            <div class="times">
+              <button class="time _active">11:00</button>
+              <button class="time">11:00</button>
+              <button class="time">11:00</button>
+              <button class="time">11:00</button>
+              <button class="time">11:00</button>
+              <button class="time">11:00</button>
+              <button class="time">11:00</button>
+              <button class="time">11:00</button>
+              <button class="time">11:00</button>
+              <button class="time">11:00</button>
+              <button class="time">11:00</button>
+              <button class="time">11:00</button>
+            </div>
+            <button class="main_button summon_approve_popup">Записаться на прием</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="approve_popup _popup _active">
+        <div class="cross">
+          <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0.550706 0.550248C0.160181 0.940772 0.160182 1.57394 0.550706 1.96446L4.08624 5.5L0.550706 9.03553C0.160181 9.42605 0.160181 10.0592 0.550706 10.4497C0.94123 10.8403 1.5744 10.8403 1.96492 10.4497L5.50045 6.91421L9.03599 10.4497C9.42651 10.8403 10.0597 10.8403 10.4502 10.4497C10.8407 10.0592 10.8407 9.42605 10.4502 9.03553L6.91467 5.5L10.4502 1.96446C10.8407 1.57394 10.8407 0.940772 10.4502 0.550248C10.0597 0.159724 9.42651 0.159724 9.03599 0.550248L5.50045 4.08578L1.96492 0.550248C1.57439 0.159724 0.94123 0.159724 0.550706 0.550248Z"
+              fill="#2A3440"
+            />
+          </svg>
+        </div>
+        <div class="approve_header">
+          <span>Вы записываетесь на прием к врачу</span>
+        </div>
+        <div class="content_box">
+          <div class="popup_header">
+            <div class="img">
+              <img src="img/doctor.png" alt="" />
+              <div class="mobile_text">
+                <div class="name">
+                  Мянник Сергей <br />
+                  Алексеевич
+                </div>
+                <div class="job">Уролог</div>
+              </div>
+            </div>
+            <div class="text_part">
+              <div class="name">Мянник Сергей Алексеевич</div>
+              <div class="job">Уролог</div>
+              <div class="stats">
+                <div class="stat_item">
+                  <span>Адрес</span>
+                  <span>Клиника на Пресне,</span>
+                </div>
+                <div class="stat_item">
+                  <span>Дата</span>
+                  <span>7 мая 2025</span>
+                </div>
+                <div class="stat_item">
+                  <span>Время</span>
+                  <span>10:30</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form action="#" class="contact_form">
+            <input type="text" placeholder="Ваше имя*" />
+            <input type="text" placeholder="Телефон*" />
+            <textarea name="" id="" placeholder="Комментарий"></textarea>
+            <button class="main_button" disabled>Записаться на прием</button>
+            <span class="personal_data"
+              >Нажимая на кнопку, я принимаю <a href="#">соглашение на обработку персональных данных</a></span
+            >
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <script src="scripts/slick.min.js"></script>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

@@ -1,4 +1,11 @@
 $(function () {
+  $('.video').click(function () {
+    $(this).children('.video_next').addClass('_active');
+  });
+  $('.mobile_video').click(function () {
+    $(this).children('.video_next').addClass('_active');
+  });
+
   $('.slider_discount_body').slick({
     infinite: false,
     slidesToShow: 1,
@@ -9,9 +16,35 @@ $(function () {
     nextArrow: $('.slider_discount_controls>.arrow_next'),
   });
 
-  $('.slider_doctors').slick({
+  $('.slider_gallery').slick({
     infinite: false,
-    slidesToShow: 2,
+    slidesToShow: 3,
+    slidesToScroll: 2,
+    speed: 300,
+    arrows: true,
+    prevArrow: $('.slider_gallery_controls>.arrow_prev'),
+    nextArrow: $('.slider_gallery_controls>.arrow_next'),
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
+
+  $('.slider_doctors_new').slick({
+    infinite: false,
+    slidesToShow: 4,
     slidesToScroll: 1,
     speed: 300,
     arrows: true,
@@ -39,9 +72,58 @@ $(function () {
     nextArrow: $('.slider_times_container>.slider_next'),
   });
 
+  $('.rev_block_slider').slick({
+    infinite: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    speed: 300,
+    arrows: true,
+    prevArrow: $('.slider_review_controls>.arrow_prev'),
+    nextArrow: $('.slider_review_controls>.arrow_next'),
+    draggable: true,
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
+
   $('.accordion_item>.title').click(function () {
     $(this).siblings('.body').slideToggle();
     $(this).parent().toggleClass('_active');
+
+    $('.slider_times').slick('refresh');
+  });
+
+  $('.stars_slider_body').slick({
+    infinite: false,
+    slidesToShow: 4,
+    slidesToScroll: 2,
+    speed: 300,
+    arrows: true,
+    prevArrow: $('.slider_stars_controls>.arrow_prev'),
+    nextArrow: $('.slider_stars_controls>.arrow_next'),
+    draggable: true,
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
 
   $('.slider_articles').slick({
@@ -103,6 +185,11 @@ $(function () {
     ],
   });
 
+  $('.rev_block_slider .show_more').click(function () {
+    $(this).siblings('span').fadeIn();
+    $(this).remove();
+  });
+
   if (document.documentElement.clientWidth < 900) {
     $('._slider_blog').slick({
       infinite: false,
@@ -121,6 +208,39 @@ $(function () {
           },
         },
       ],
+    });
+    $('#extra').remove();
+
+    $('._steps_mobile_slider').slick({
+      infinite: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      speed: 300,
+      arrows: false,
+      dots: true,
+      appendDots: $('.mobile_steps_slider_dots'),
+    });
+
+    $('.rew_slider_centered').slick({
+      infinite: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      speed: 300,
+      arrows: false,
+      centerMode: true,
+      centerPadding: '80px',
+      dots: true,
+      appendDots: $('.slider_dots_rew_centered'),
+    });
+
+    $('.filials_slider').slick({
+      infinite: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      speed: 300,
+      arrows: false,
+      prevArrow: $('.slider_fillial_controls>.arrow_prev'),
+      nextArrow: $('.slider_fillial_controls>.arrow_next'),
     });
   }
 
@@ -145,4 +265,18 @@ $(function () {
   //     },
   //   ],
   // });
+
+  $('.cross').click(function () {
+    $(this).closest('._popup').removeClass('_active');
+  });
+
+  $('.summon_app_popup').click(function () {
+    $('._popup').removeClass('_active');
+    $('.get_an_appointment').addClass('_active');
+  });
+
+  $('.summon_approve_popup').click(function () {
+    $('._popup').removeClass('_active');
+    $('.approve_popup').addClass('_active');
+  });
 });
