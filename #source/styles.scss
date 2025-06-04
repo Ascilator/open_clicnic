@@ -4925,3 +4925,54 @@ $color_text: #2a3440;
     }
   }
 }
+
+// mobile menu
+
+.mobile_menu_fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #f2f4f8;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px 25px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  z-index: 1000;
+
+  .mobile_item {
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    &._active {
+      rect {
+        stroke: #3e8dff;
+      }
+      path {
+        fill: #3e8dff;
+        stroke: #3e8dff;
+      }
+      .text {
+        color: #3e8dff;
+      }
+    }
+  }
+  .icon {
+    margin-bottom: 4px;
+    svg {
+      height: 28px;
+    }
+  }
+
+  .text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 110%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+}
