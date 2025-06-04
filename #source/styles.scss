@@ -2888,9 +2888,52 @@ $color_text: #2a3440;
     gap: 10px;
     overflow: visible;
     @media screen and (max-width: 1100px) {
-      overflow-x: scroll;
+      // overflow-x: scroll;
+      display: inline-block;
+      white-space: nowrap;
+      overflow: hidden;
       padding-bottom: 10px;
       scrollbar-width: thin;
+      width: 100%;
+      .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+        height: 11px;
+      }
+
+      .mCSB_scrollTools_horizontal {
+        margin: 0 10px;
+      }
+
+      .mCSB_container {
+        display: flex;
+      }
+
+      .mCSB_dragger {
+        margin: 2px;
+      }
+
+      .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger {
+        height: 7px;
+      }
+
+      .mCS-dark-thick.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+      .mCS-light-thick.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+        margin: 20px auto;
+      }
+
+      .mCSB_dragger {
+        background-color: #2196f3 !important; /* Синий цвет для бегунка */
+        border-radius: 10px !important; /* Округлые углы бегунка */
+      }
+
+      .mCSB_scrollTools .mCSB_dragger_bar {
+        background-color: #2196f3 !important; /* Синий цвет для бегунка */
+        border-radius: 10px !important; /* Округлые углы бегунка */
+      }
+
+      .mCSB_scrollTools .mCSB_draggerContainer {
+        background: #ffffff !important; /* Белая полоска */
+        border-radius: 10px !important;
+      }
     }
   }
   .click_item {
@@ -2918,6 +2961,9 @@ $color_text: #2a3440;
     @media screen and (max-width: 1100px) {
       flex: 0 0 160px;
       width: 160px;
+      display: inline-block;
+      margin-right: 10px;
+      white-space: normal;
     }
   }
 
@@ -2981,7 +3027,7 @@ $color_text: #2a3440;
   }
 
   @media screen and (max-width: 900px) {
-    padding-bottom: 50px;
+    padding-bottom: 10px;
     border-radius: 0 0 30px 30px;
     padding-top: 65px;
   }
@@ -3400,10 +3446,35 @@ $color_text: #2a3440;
       display: block;
       padding: 20px;
       height: 510px;
-      overflow: auto;
+      overflow: hidden;
       scrollbar-width: thin;
       margin-bottom: 20px;
       padding-bottom: 0;
+      .mCSB_scrollTools {
+        width: 11px;
+      }
+
+      .mCSB_scrollTools .mCSB_dragger {
+        width: 7px;
+        margin: 0 2px;
+      }
+      .mCSB_draggerRail {
+        background: #fff !important;
+      }
+
+      .mCSB_dragger {
+        border: 1px solid #fff;
+      }
+
+      .mCSB_dragger_bar {
+        background-color: #2196f3 !important; /* Синий цвет для бегунка */
+        border-radius: 10px !important; /* Округлые углы бегунка */
+      }
+
+      .mCSB_scrollTools .mCSB_draggerContainer {
+        background: #ffffff !important; /* Белая полоска */
+        border-radius: 10px !important;
+      }
     }
   }
 

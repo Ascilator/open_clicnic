@@ -198,7 +198,27 @@ $(function () {
     $(this).remove();
   });
 
+  if (document.documentElement.clientWidth < 600) {
+    $('#btn_container').mCustomScrollbar({
+      axis: 'y',
+      theme: 'dark-thick',
+      scrollInertia: 400,
+      mouseWheel: {
+        scrollAmount: 100,
+      },
+    });
+  }
+
   if (document.documentElement.clientWidth < 900) {
+    $('.navigation .wrapper').mCustomScrollbar({
+      axis: 'x',
+      theme: 'dark-thick',
+      scrollInertia: 400,
+      mouseWheel: {
+        scrollAmount: 100,
+      },
+    });
+
     $('._slider_blog').slick({
       infinite: false,
       slidesToShow: 2,
