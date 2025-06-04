@@ -1179,6 +1179,11 @@ x .adresses_block ul li:after {
     display: none;
   }
 }
+@media screen and (max-width: 900px) {
+  .dicount_block {
+    margin-top: 80px;
+  }
+}
 
 .our_doctors {
   margin-top: 140px;
@@ -1186,6 +1191,13 @@ x .adresses_block ul li:after {
 .our_doctors._main .block_header {
   justify-content: space-between;
   align-items: flex-end;
+  position: relative;
+}
+@media screen and (max-width: 900px) {
+  .our_doctors._main .block_header {
+    display: flex;
+    margin-bottom: 95px;
+  }
 }
 .our_doctors._main .input_item {
   background: #f2f4f8;
@@ -1208,6 +1220,11 @@ x .adresses_block ul li:after {
   letter-spacing: -2%;
   color: rgba(42, 52, 64, 0.737254902);
 }
+@media screen and (max-width: 900px) {
+  .our_doctors._main .input_item input {
+    padding: 0 20px;
+  }
+}
 .our_doctors._main .input_item button {
   position: absolute;
   right: 14px;
@@ -1220,6 +1237,13 @@ x .adresses_block ul li:after {
 }
 .our_doctors._main .input_item button svg {
   display: block;
+}
+@media screen and (max-width: 900px) {
+  .our_doctors._main .input_item {
+    max-width: 100%;
+    position: absolute;
+    height: 50px;
+  }
 }
 .our_doctors._main .block_header .right_part {
   flex: 0 1 auto;
@@ -1264,6 +1288,11 @@ x .adresses_block ul li:after {
   }
 }
 @media screen and (max-width: 900px) {
+  .our_doctors .block_header .slider_specialist_controls._main_page {
+    display: flex;
+  }
+}
+@media screen and (max-width: 900px) {
   .our_doctors .block_header {
     display: block;
     margin-bottom: 20px;
@@ -1279,6 +1308,31 @@ x .adresses_block ul li:after {
 }
 .our_doctors .slider_doctors_new {
   margin: 0 -10px;
+}
+@media screen and (max-width: 900px) {
+  .our_doctors .slider_doctors_new._visible {
+    display: block;
+    margin-right: 10px;
+  }
+  .our_doctors .slider_doctors_new._visible .stars {
+    font-size: 12px;
+    padding: 2px 15px 2px 8px;
+  }
+  .our_doctors .slider_doctors_new._visible .stars img {
+    width: 14px;
+  }
+  .our_doctors .slider_doctors_new._visible .exp {
+    font-size: 12px;
+    top: 40px;
+    height: 20px;
+    padding: 0 11px;
+  }
+  .our_doctors .slider_doctors_new._visible .slick-list {
+    overflow: visible;
+  }
+  .our_doctors .slider_doctors_new._visible .main_button {
+    height: 50px;
+  }
 }
 @media screen and (max-width: 900px) {
   .our_doctors .slider_doctors_new {
@@ -1627,6 +1681,11 @@ x .adresses_block ul li:after {
 @media screen and (max-width: 900px) {
   .our_doctors .our_doctors_mobile {
     display: block;
+  }
+}
+@media screen and (max-width: 900px) {
+  .our_doctors .our_doctors_mobile._no_visible {
+    display: none;
   }
 }
 

@@ -1166,6 +1166,10 @@ $color_text: #2a3440;
       display: none;
     }
   }
+
+  @media screen and (max-width: 900px) {
+    margin-top: 80px;
+  }
 }
 
 .our_doctors {
@@ -1175,6 +1179,11 @@ $color_text: #2a3440;
     .block_header {
       justify-content: space-between;
       align-items: flex-end;
+      position: relative;
+      @media screen and (max-width: 900px) {
+        display: flex;
+        margin-bottom: 95px;
+      }
     }
 
     .input_item {
@@ -1197,6 +1206,10 @@ $color_text: #2a3440;
         line-height: 110%;
         letter-spacing: -2%;
         color: #2a3440bc;
+
+        @media screen and (max-width: 900px) {
+          padding: 0 20px;
+        }
       }
       button {
         position: absolute;
@@ -1210,6 +1223,11 @@ $color_text: #2a3440;
         svg {
           display: block;
         }
+      }
+      @media screen and (max-width: 900px) {
+        max-width: 100%;
+        position: absolute;
+        height: 50px;
       }
     }
 
@@ -1253,6 +1271,11 @@ $color_text: #2a3440;
       @media screen and (max-width: 900px) {
         display: none;
       }
+      &._main_page {
+        @media screen and (max-width: 900px) {
+          display: flex;
+        }
+      }
     }
 
     @media screen and (max-width: 900px) {
@@ -1270,6 +1293,35 @@ $color_text: #2a3440;
 
   .slider_doctors_new {
     margin: 0 -10px;
+    &._visible {
+      @media screen and (max-width: 900px) {
+        display: block;
+        margin-right: 10px;
+        .stars {
+          font-size: 12px;
+          padding: 2px 15px 2px 8px;
+          img {
+            width: 14px;
+          }
+        }
+
+        .exp {
+          font-size: 12px;
+          top: 40px;
+          height: 20px;
+          padding: 0 11px;
+        }
+
+        .slick-list {
+          overflow: visible;
+        }
+
+        .main_button {
+          height: 50px;
+        }
+      }
+    }
+
     @media screen and (max-width: 900px) {
       display: none;
     }
@@ -1651,6 +1703,12 @@ $color_text: #2a3440;
 
     @media screen and (max-width: 900px) {
       display: block;
+    }
+
+    &._no_visible {
+      @media screen and (max-width: 900px) {
+        display: none;
+      }
     }
   }
 }
@@ -2921,6 +2979,7 @@ $color_text: #2a3440;
     margin-top: 2px;
     transition: 0.3s;
   }
+
   @media screen and (max-width: 900px) {
     padding-bottom: 50px;
     border-radius: 0 0 30px 30px;
