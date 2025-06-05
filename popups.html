@@ -26,7 +26,7 @@
       <button class="main_button summon_app_popup">попап 1</button>
       <button class="main_button summon_approve_popup">попап 2</button>
 
-      <div class="get_an_appointment _popup">
+      <div class="get_an_appointment _popup _active">
         <div class="cross">
           <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -74,13 +74,13 @@
         <div class="mobile_calendar_header">
           <div class="text">Выберите дату приема</div>
           <div class="month">
-            <div class="arrow">
+            <div class="arrow _prev_month_arrow">
               <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M8 15L1 8L8 1" stroke="#2A3440" stroke-opacity="0.4" />
               </svg>
             </div>
             <div class="name">Май 2025</div>
-            <div class="arrow">
+            <div class="arrow _next_month_arrow">
               <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 1L8 8L1 15" stroke="#2A3440" stroke-opacity="0.4" />
               </svg>
@@ -94,13 +94,13 @@
         <div class="calendar_container">
           <div class="left_part">
             <div class="month">
-              <div class="arrow">
+              <div class="arrow _prev_month_arrow">
                 <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M8 15L1 8L8 1" stroke="#2A3440" stroke-opacity="0.4" />
                 </svg>
               </div>
-              <div class="name">Май 2025</div>
-              <div class="arrow">
+              <div class="name" id="month-name">Май 2025</div>
+              <div class="arrow _next_month_arrow">
                 <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1 1L8 8L1 15" stroke="#2A3440" stroke-opacity="0.4" />
                 </svg>
@@ -116,7 +116,7 @@
                 <div class="item">сб</div>
                 <div class="item">вс</div>
               </div>
-              <div class="cal_body">
+              <div class="cal_body" id="calendar-body">
                 <button class="calendar_btn"></button>
                 <button class="calendar_btn"></button>
                 <button class="calendar_btn"></button>
@@ -276,7 +276,7 @@
         </div>
       </div>
 
-      <div class="approve_popup _popup _active">
+      <div class="approve_popup _popup">
         <div class="cross">
           <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path

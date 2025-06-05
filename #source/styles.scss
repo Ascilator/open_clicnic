@@ -4057,6 +4057,10 @@ $color_text: #2a3440;
   }
   .stars {
     text-align: center;
+    svg {
+      height: 16px;
+      width: 16px;
+    }
   }
   .logo {
     margin-top: 20px;
@@ -4645,9 +4649,10 @@ $color_text: #2a3440;
   }
 
   .clinic_switcher {
-    display: flex;
+    display: inline-flex;
     gap: 20px;
-    margin-bottom: -20px;
+    position: relative;
+    z-index: 10;
     button {
       width: auto;
       height: 32px;
@@ -4668,6 +4673,7 @@ $color_text: #2a3440;
   .calendar_container {
     display: flex;
     gap: 20px;
+    margin-top: -20px;
     @media screen and (max-width: 900px) {
       display: block;
     }
@@ -4698,6 +4704,7 @@ $color_text: #2a3440;
     align-items: center;
     gap: 11px;
     .arrow {
+      cursor: pointer;
       @media screen and (max-width: 900px) {
         svg {
           height: 14px;

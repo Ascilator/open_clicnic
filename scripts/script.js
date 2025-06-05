@@ -307,4 +307,94 @@ $(function () {
     $('._popup').removeClass('_active');
     $('.approve_popup').addClass('_active');
   });
+
+  var currentDate = new Date();
+  var currentMonth = currentDate.getMonth();
+  var currentYear = currentDate.getFullYear();
+
+  function updateCalendar() {
+    var monthNames = [
+      'Январь',
+      'Февраль',
+      'Март',
+      'Апрель',
+      'Май',
+      'Июнь',
+      'Июль',
+      'Август',
+      'Сентябрь',
+      'Октябрь',
+      'Ноябрь',
+      'Декабрь',
+    ];
+    $('#month-name').text(monthNames[currentMonth] + ' ' + currentYear);
+
+    var daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
+
+    var firstDay = new Date(currentYear, currentMonth, 1).getDay();
+    firstDay = firstDay === 0 ? 6 : firstDay - 1;
+
+    $('#calendar-body').empty();
+
+    for (var i = 0; i < firstDay; i++) {
+      $('#calendar-body').append('<button class="calendar_btn"></button>');
+    }
+
+    var totalDays = firstDay + daysInMonth;
+    var rows = Math.floor(totalDays / 7);
+
+    var lastRow = false;
+
+    for (var day = 1; day <= daysInMonth; day++) {
+      if (totalDays % 7 === 0 && Math.abs(firstDay + day - rows * 7) < 7) {
+        lastRow = true;
+      }
+
+      if (firstDay + day - rows * 7 < 7 && firstDay + day - rows * 7 > 0) {
+        lastRow = true;
+      }
+
+      if (lastRow) {
+        $('#calendar-body').append(
+          '<button class="calendar_btn _no_border"><span>' + day + '</span><span>Нет приема</span></button>'
+        );
+      } else {
+        $('#calendar-body').append(
+          '<button class="calendar_btn"><span>' + day + '</span><span>Нет приема</span></button>'
+        );
+      }
+    }
+
+    var remainingCells = 7 - (totalDays % 7);
+    for (var i = 0; i < remainingCells && remainingCells !== 7; i++) {
+      $('#calendar-body').append('<button class="calendar_btn _no_border"></button>');
+    }
+  }
+
+  $('.arrow._prev_month_arrow').click(function () {
+    if (currentMonth === 0) {
+      currentMonth = 11;
+      currentYear--;
+    } else {
+      currentMonth--;
+    }
+    updateCalendar();
+  });
+
+  $('.arrow._next_month_arrow').click(function () {
+    if (currentMonth === 11) {
+      currentMonth = 0;
+      currentYear++;
+    } else {
+      currentMonth++;
+    }
+    updateCalendar();
+  });
+
+  updateCalendar();
+
+  $('.clinic_switcher > button').click(function () {
+    $('.clinic_switcher > button').removeClass('main_button').addClass('main_reverse_button');
+    $(this).removeClass('main_reverse_button').addClass('main_button');
+  });
 });

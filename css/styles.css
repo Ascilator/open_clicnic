@@ -4109,6 +4109,10 @@ x .adresses_block ul li:after {
 .rew_block .stars {
   text-align: center;
 }
+.rew_block .stars svg {
+  height: 16px;
+  width: 16px;
+}
 .rew_block .logo {
   margin-top: 20px;
   height: 52px;
@@ -4707,9 +4711,10 @@ x .adresses_block ul li:after {
   }
 }
 .get_an_appointment .clinic_switcher {
-  display: flex;
+  display: inline-flex;
   gap: 20px;
-  margin-bottom: -20px;
+  position: relative;
+  z-index: 10;
 }
 .get_an_appointment .clinic_switcher button {
   width: auto;
@@ -4732,6 +4737,7 @@ x .adresses_block ul li:after {
 .get_an_appointment .calendar_container {
   display: flex;
   gap: 20px;
+  margin-top: -20px;
 }
 @media screen and (max-width: 900px) {
   .get_an_appointment .calendar_container {
@@ -4762,6 +4768,9 @@ x .adresses_block ul li:after {
   justify-content: flex-end;
   align-items: center;
   gap: 11px;
+}
+.get_an_appointment .month .arrow {
+  cursor: pointer;
 }
 @media screen and (max-width: 900px) {
   .get_an_appointment .month .arrow svg {
