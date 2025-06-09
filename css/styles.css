@@ -5347,6 +5347,13 @@ x .adresses_block ul li:after {
   align-items: center;
   text-decoration: none;
 }
+
+.mobile_menu_fixed .mobile_item a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .mobile_menu_fixed .mobile_item._active rect {
   stroke: #3e8dff;
 }
