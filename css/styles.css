@@ -1018,7 +1018,7 @@ x .adresses_block ul li:after {
   height: 1px;
   background-color: #2a3440;
   border-radius: 0;
-  top: 8px;
+  top: 11px;
 }
 @media screen and (max-width: 900px) {
   .big_wrapper .text_block li {
@@ -2779,13 +2779,14 @@ x .adresses_block ul li:after {
   padding: 20px;
   display: flex;
   gap: 15px;
-  height: 280px;
+  min-height: 280px;
 }
 @media screen and (max-width: 900px) {
   .blog_block .blog_item {
     flex: unset;
     margin: 0 20px 0 0;
     height: unset;
+    min-height: unset;
   }
 }
 .blog_block .arrow {
@@ -3224,6 +3225,10 @@ x .adresses_block ul li:after {
 .welcome_block .main_button {
   height: 55px;
   margin-top: 30px;
+  padding-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media screen and (max-width: 900px) {
   .welcome_block .main_button {
@@ -3561,7 +3566,7 @@ x .adresses_block ul li:after {
   background: #f2f4f8;
   border-radius: 20px;
 }
-.popular_services .right_part button {
+.popular_services .right_part .category_btn {
   padding: 12px 15px;
   flex: 0 1 calc(50% - 7.5px);
   font-weight: 400;
@@ -3577,7 +3582,7 @@ x .adresses_block ul li:after {
   cursor: pointer;
 }
 @media screen and (max-width: 600px) {
-  .popular_services .right_part button {
+  .popular_services .right_part .category_btn {
     width: 100%;
     margin-bottom: 10px;
   }
@@ -3595,6 +3600,8 @@ x .adresses_block ul li:after {
   letter-spacing: -2%;
   text-align: center;
   color: #fff;
+  display: flex;
+  align-items: center;
   justify-content: center;
   border: none;
   margin-bottom: 10px;
@@ -4425,6 +4432,25 @@ x .adresses_block ul li:after {
   line-height: 100%;
   letter-spacing: -2%;
 }
+
+.rew_text_block .rev_header .avatar_letter {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  flex: 0 0 50px;
+  background: #3e8dff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: #fff;
+}
+
 @media screen and (max-width: 900px) {
   .rew_text_block .rev_header {
     gap: 15px;
@@ -4612,6 +4638,13 @@ x .adresses_block ul li:after {
   display: flex;
   gap: 20px;
 }
+
+.filials .filials_slider .slider_item {
+  flex: 0 1 calc(33.333%);
+  display: flex;
+  flex-direction: column;
+}
+
 @media screen and (max-width: 900px) {
   .filials .filials_slider {
     gap: 0;
@@ -4649,6 +4682,7 @@ x .adresses_block ul li:after {
   display: flex;
   flex-direction: column;
   position: relative;
+  flex: 1 1 auto;
 }
 @media screen and (max-width: 900px) {
   .filials .text {
@@ -4679,6 +4713,7 @@ x .adresses_block ul li:after {
 }
 .filials .coord_item:nth-child(2) {
   margin-bottom: 10px;
+  margin-top: auto;
 }
 .filials .arrow {
   position: absolute;

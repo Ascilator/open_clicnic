@@ -5,7 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   list-style-type: none;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   min-width: 0;
   color: #2a3440;
 }
@@ -174,13 +174,13 @@ button.secondary_button:hover:after {
   background: #2a3440;
 }
 
-ul {
+.big_wrapper ul {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
-ul li {
+.big_wrapper ul li {
   font-weight: 400;
   font-size: 16px;
   line-height: 130%;
@@ -189,9 +189,9 @@ ul li {
   padding-left: 10px;
   color: #3e8dff;
 }
-ul li:after {
+.big_wrapper ul li:after {
   position: absolute;
-  content: "";
+  content: '';
   display: block;
   top: 50%;
   transform: translate(0, -50%);
@@ -243,7 +243,7 @@ a.main_link span {
   align-items: center;
 }
 a.main_link:after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   bottom: -1px;
