@@ -1523,11 +1523,6 @@ x .adresses_block ul li:after {
     display: none;
   }
 }
-@media screen and (max-width: 900px) {
-  .our_doctors .slider_doctors_new {
-    display: none;
-  }
-}
 .our_doctors .slider_item {
   margin: 0 10px;
 }
@@ -3202,10 +3197,12 @@ x .adresses_block ul li:after {
   line-height: 110%;
   letter-spacing: -2%;
   text-align: center;
+  white-space: nowrap;
 }
 @media screen and (max-width: 900px) {
   .welcome_block h1 {
     display: none;
+    white-space: wrap;
   }
 }
 .welcome_block .pre {
@@ -3911,6 +3908,7 @@ x .adresses_block ul li:after {
   margin: 0 10px;
 }
 .gallery .slider_gallery .slider_item img {
+  border-radius: 20px;
   width: 100%;
 }
 @media screen and (max-width: 900px) {
@@ -5370,6 +5368,7 @@ x .adresses_block ul li:after {
   background: #f2f4f8;
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   padding: 20px 30px 25px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -5400,11 +5399,15 @@ x .adresses_block ul li:after {
   color: #3e8dff;
 }
 .mobile_menu_fixed .icon {
-  margin-bottom: 4px;
 }
 .mobile_menu_fixed .icon svg {
   height: 28px;
 }
+
+.mobile_menu_fixed .mobile_item:last-child .icon svg {
+  height: 37px;
+}
+
 .mobile_menu_fixed .text {
   font-weight: 400;
   font-size: 12px;
